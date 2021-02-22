@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ex 1</title>
+    <style>
+        .container-item {
+            background-color: lightcoral;
+            color: black;
+            padding: 10px;
+            border-radius: 5px;
+            width: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p>This is the default paragraph</p>
+    </div>
+
+    <br />
+    <input type="button" id="add" value="Add Element" onclick="addElement()">
+    <input type="button" id="rmv" value="Remove Element" onclick="removeElement()">
+
+    <script>
+        function addElement() {
+            const containr = document.querySelector('#container');
+            const p = document.createElement('p');
+            p.className = 'container-item';
+            p.innerText = 'this is a paragraph';
+            containr.appendChild(p);
+        }
+
+        function removeElement() {
+            const containr = document.querySelector('#container');
+            const lastChild = document.querySelectorAll('.container-item:last-child');
+            if (lastChild.length)
+                containr.removeChild(lastChild[0]);
+        }
+    </script>
+</body>
