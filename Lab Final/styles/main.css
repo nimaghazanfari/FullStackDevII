@@ -1,0 +1,178 @@
+/* using Flexbox */
+
+.main-container {
+    display: flex;
+}
+
+.item {
+    flex-basis: 100%;
+}
+
+.item-2 {
+    flex-basis: 200%;
+}
+
+.item-3 {
+    flex-basis: 300%;
+}
+
+.item-4 {
+    flex-basis: 400%;
+}
+
+.item-5 {
+    flex-basis: 500%;
+}
+
+body {
+    background-image: url(../images/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.middle-part {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(233, 233, 233, 0.8);
+}
+
+.middle-part.color-blue {
+    background-color: rgb(168, 191, 255, 0.8);
+}
+
+.text-align-right div:first-child {
+    text-align: right;
+    padding: 10px;
+    font-family: Tahoma;
+    font-weight: bold;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+}
+
+select {
+    width: 103%;
+}
+
+label {
+    min-width: 60px;
+    display: block;
+}
+
+fieldset {
+    border-radius: 15px;
+    min-width: 1000px;
+}
+
+fieldset legend {
+    margin: 0 auto;
+    padding: 5px;
+    font-family: Tahoma;
+    font-weight: bold;
+    color: white;
+}
+
+.search-area {
+    display: flex;
+}
+
+.search-area .btn {
+    width: 70%;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5a9fda;
+}
+
+.search-area .btn.btn-orange {
+    background-color: #e7a221;
+}
+
+.search-area .btn.btn-orange:hover {
+    background-color: orange;
+}
+
+.search-area .btn:hover {
+    background-color: #1772c2;
+}
+
+.image {
+    margin: 5px;
+    cursor: pointer;
+}
+
+.image div {
+    margin: 0 auto;
+    width: 160px;
+    height: 160px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+.list-area table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.list-area table tr td {
+    text-align: center;
+}
+
+.list-area table tr td:last-child {
+    width: 130px;
+}
+
+.list-area table thead th {
+    background-color: rgba(5, 59, 255, 0.5);
+    color: white;
+    padding: 10px;
+    font-family: Tahoma;
+}
+
+.list-area table tr:nth-child(odd) {
+    background-color: #ace3ea;
+}
+
+.list-area table tbody tr:hover {
+    background-color: #4e919a;
+    color: white;
+}
+
+.list-area table td {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #7d6a68;
+    padding: 5px;
+}
+
+.list-area table button {
+    width: 50%;
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5a9fda;
+    width: 40px
+}
+
+.list-area table button:hover {
+    background-color: #0a72cc;
+}
+
+.ui-dialog-content {
+    padding: 20px 10px 10px;
+}
+
+.ui-dialog-content i {
+    margin-right: 5px;
+}
+
+.hidden {
+    display: none;
+}

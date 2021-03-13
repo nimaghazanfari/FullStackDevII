@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+
+<body>
+
+    <fieldset>
+        <legend>Music Search</legend>
+
+        <form id="search-form">
+            <!-- small header search box -->
+            <div class="main-container">
+                <div class="item-2"></div>
+                <div class="item-5">
+
+                    <div class="middle-part">
+
+                        <div class="main-container text-align-right">
+                            <div class="item"><label for="artist">Artist:</label></div>
+                            <div class="item-5"><input type="text" id="artist" name="artist"
+                                    placeholder="Enter the Artist Name"></div>
+                            <div class="item"></div>
+                        </div>
+
+                        <div class="main-container text-align-right">
+                            <div class="item"><label for="song">Song:</label></div>
+                            <div class="item-5"><input type="text" id="song" name="song"
+                                    placeholder="Enter the Song Title"></div>
+                            <div class="item"></div>
+                        </div>
+
+                        <div class="main-container text-align-right">
+                            <div class="item"><label for="album">Album:</label></div>
+                            <div class="item-5"><input type="text" id="album" name="album"
+                                    placeholder="Enter the Album name"></div>
+                            <div class="item"></div>
+                        </div>
+
+                        <div class="main-container text-align-right">
+                            <div class="item"><label for="genre">Genre:</label></div>
+                            <div class="item-5">
+
+                                <select name="genre" id="genre">
+                                    <option value="">Select a Genre</option>
+                                    <option value="pop">Pop</option>
+                                    <option value="rock">Rock</option>
+                                    <option value="classical">Classical</option>
+                                    <option value="techno">Techno</option>
+                                </select>
+
+                            </div>
+                            <div class="item"></div>
+                        </div>
+
+                        <div class="main-container" style="margin-top: 20px;">
+                            <div class="item-2"></div>
+                            <div class="item-5 search-area">
+
+                                <div class="item"></div>
+                                <div class="item-3">
+                                    <button type="submit" class="btn">
+                                        <i class="fa fa-search"></i>
+                                        Search
+                                    </button>
+                                </div>
+                                <div class="item-3">
+                                    <button type="button" id="reset" class="btn btn-orange">
+                                        <i class="fa fa-redo-alt"></i>
+                                        Reset
+                                    </button>
+                                </div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="item"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="item-2"></div>
+            </div>
+        </form>
+
+        <!-- album cover part -->
+        <div class="main-container" style="margin-top: 15px;">
+
+            <div class="item"></div>
+
+            <div class="middle-part color-blue hidden">
+                <div class="item-5">
+                    <div id="favorites" class="main-container">
+                    </div>
+                </div>
+            </div>
+
+            <div class="item"></div>
+        </div>
+
+        <!-- album list -->
+        <div class="middle-part list-area hidden" style="margin-top: 15px;">
+            <table id="song-list">
+                <thead>
+                    <tr>
+                        <th>Artist</th>
+                        <th>Song</th>
+                        <th>Time</th>
+                        <th>Album</th>
+                        <th>Rating</th>
+                        <th>Genre</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+    </fieldset>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
